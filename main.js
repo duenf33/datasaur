@@ -82,20 +82,25 @@ const singularizeDinos = function(dino){
 }
 
 const truncateDinos = function(dino){
-  const newDinos = [];
+  const newDino = [];
   for(const newD of dino){
-    newDinos.push = truncateSpecies(newD);
+    newDino.push = truncateSpecies(newD);
   }
-  return newDinos;
+  return newDino;
 }
 const makeAllExtinct = function(dino){
-  const newDino = makeDino(dino.species, dino.period, dino.carnivore, dino.extinct)
+  const newDino = [];
+  for(make of dino){
+    newDino.push = isExtinct(make);
+  }
 
   return newDino;
 }
 const carnivoresOnly = function(dino){
-  const newDino = makeDino(dino.species, dino.period, dino.carnivore, dino.extinct)
-
+  const newDino = [];
+  for(const only of dino){
+    newDino.push(isCarnivore(dino));
+  }
   return newDino;
 }
 const  herbivoresOnly = function(dino){
